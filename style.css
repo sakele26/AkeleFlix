@@ -1,0 +1,137 @@
+/* Global reset for margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background-color: #141414;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #141414;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#xlogo img {
+    width: 120px; /* Adjust logo size */
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e50914; /* Red highlight on hover */
+}
+
+/* Main Section */
+main {
+    margin-top: 80px; /* Offset for fixed header */
+}
+
+/* Movie Grid Styling */
+.movie-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.movie {
+    width: 200px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.movie img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+}
+
+.movie h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.movie a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #e50914;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.movie a:hover {
+    background-color: #f40612;
+}
+
+/* Movie Hover Effect */
+.movie:hover {
+    transform: scale(1.05);
+}
+
+/* Genre List */
+#genres ul {
+    display: flex;
+    list-style: none;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+#genres ul li {
+    font-size: 18px;
+}
+
+#genres ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#genres ul li a:hover {
+    color: #e50914;
+}
+
+/* Footer */
+footer {
+    background-color: #141414;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+}
